@@ -6,7 +6,12 @@ import lombok.Data;
 public class StripeTokenDto {
 
     private String cardNumber;
-    private String expirationMonth;
+    private String expMonth;
+    private String expYear;
+    private String cvc;
+    private String token;
+    private String username;
+    private boolean success;
 
-    private String cardName;
+
 }
