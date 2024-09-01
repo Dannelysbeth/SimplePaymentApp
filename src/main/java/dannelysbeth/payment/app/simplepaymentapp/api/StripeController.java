@@ -1,7 +1,7 @@
 package dannelysbeth.payment.app.simplepaymentapp.api;
 
 import dannelysbeth.payment.app.simplepaymentapp.dto.StripeChargeDto;
-import dannelysbeth.payment.app.simplepaymentapp.dto.StripeTokenDto;
+import dannelysbeth.payment.app.simplepaymentapp.dto.StripeToken;
 import dannelysbeth.payment.app.simplepaymentapp.service.StripeService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class StripeController {
 
     @PostMapping("/card/token")
     @ResponseBody
-    public StripeTokenDto createCardToken(@RequestBody StripeTokenDto model) {
+    public StripeToken createCardToken(@RequestBody StripeToken model) {
         return stripeService.createCardToken(model);
     }
 

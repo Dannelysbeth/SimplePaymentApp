@@ -5,7 +5,7 @@ import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
 import com.stripe.model.Token;
 import dannelysbeth.payment.app.simplepaymentapp.dto.StripeChargeDto;
-import dannelysbeth.payment.app.simplepaymentapp.dto.StripeTokenDto;
+import dannelysbeth.payment.app.simplepaymentapp.dto.StripeToken;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,7 +26,7 @@ public class StripeService {
         Stripe.apiKey = stripeApiKey;
     }
 
-    public StripeTokenDto createCardToken(StripeTokenDto model) {
+    public StripeToken createCardToken(StripeToken model) {
         try {
             Map<String, Object> card = new HashMap<>();
             card.put("number", model.getCardNumber());

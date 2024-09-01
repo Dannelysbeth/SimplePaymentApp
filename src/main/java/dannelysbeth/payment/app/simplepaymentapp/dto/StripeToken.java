@@ -3,7 +3,7 @@ package dannelysbeth.payment.app.simplepaymentapp.dto;
 import lombok.Data;
 
 @Data
-public class StripeTokenDto {
+public class StripeToken {
 
     private String cardNumber;
     private String expMonth;
