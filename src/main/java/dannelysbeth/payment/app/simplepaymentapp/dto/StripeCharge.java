@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public class StripeChargeDto {
+public class StripeCharge {
 
     private String stripeToken;
     private String username;
