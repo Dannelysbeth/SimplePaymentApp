@@ -1,6 +1,6 @@
 package dannelysbeth.payment.app.simplepaymentapp.api;
 
-import dannelysbeth.payment.app.simplepaymentapp.dto.StripeChargeDto;
+import dannelysbeth.payment.app.simplepaymentapp.dto.StripeCharge;
 import dannelysbeth.payment.app.simplepaymentapp.dto.StripeToken;
 import dannelysbeth.payment.app.simplepaymentapp.service.StripeService;
 import lombok.AllArgsConstructor;
@@ -21,7 +21,7 @@ public class StripeController {
 
     @PostMapping("/charge")
     @ResponseBody
-    public StripeChargeDto charge(@RequestBody StripeChargeDto model) {
+    public StripeCharge charge(@RequestBody StripeCharge model) {
         return stripeService.charge(model);
     }
 }

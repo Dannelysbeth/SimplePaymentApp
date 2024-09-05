@@ -4,7 +4,7 @@ import com.stripe.Stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
 import com.stripe.model.Token;
-import dannelysbeth.payment.app.simplepaymentapp.dto.StripeChargeDto;
+import dannelysbeth.payment.app.simplepaymentapp.dto.StripeCharge;
 import dannelysbeth.payment.app.simplepaymentapp.dto.StripeToken;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
@@ -47,7 +47,7 @@ public class StripeService {
         }
     }
 
-    public StripeChargeDto charge(StripeChargeDto chargeRequest) {
+    public StripeCharge charge(StripeCharge chargeRequest) {
 
 
         try {
