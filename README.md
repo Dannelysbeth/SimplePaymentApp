@@ -1,1 +1,1 @@
-Java Spring Boot app with Stripe as a payment provider
+Java Spring Boot backend app with Stripe as a payment provider
